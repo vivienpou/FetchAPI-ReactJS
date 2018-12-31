@@ -29,15 +29,15 @@ class DetailBeer extends React.Component{
                         {itemkeys.map((keys,index)=>{
                             const linkitemvalues = itemvalues[index];
                             return(    
-                            <Row className={'itemline-'+(index%2?'r':'l')} pb-3>
-                                <Col lg={3} key={index} className='keysline' >{index===0?'':keys}</Col>
-                                <Col lg={6} key={index}>{index===0?'':linkitemvalues===Object(linkitemvalues)?'null':linkitemvalues}</Col>
+                            <Row key={index} className={'itemline-'+(index%2?'r':'l')+' pb-3'}>
+                                <Col lg={3} key={index+'_'} className='keysline' >{index===0?'':keys}</Col>
+                                <Col lg={6} key={index+'-'}>{index===0?'':linkitemvalues===Object(linkitemvalues)?'null':linkitemvalues}</Col>
                             </Row>
                             )
                         })}
                     </Col>
                     <Col lg={3}>
-                        <img src={items[receivedId].image_url} alt='imgdetail' className="imgbeer"></img>
+                        <img src={items[receivedId-1].image_url} alt='imgdetail' className="imgbeer"></img>
                     </Col>
                 </Row>
                        
