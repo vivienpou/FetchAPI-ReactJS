@@ -1,0 +1,11 @@
+.NavBar{
+    background-color:    rgba(139, 41, 41, 0.8);
+}
+
+.AdminRoom, .UserRoom{
+    color:white;
+}
+
+.UserRoom:hover,.AdminRoom:hover{
+    color:blue;
+}

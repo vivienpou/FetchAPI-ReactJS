@@ -1,0 +1,20 @@
+.wholetable{
+    margin:2%;
+    .headtable{
+        background-color:rgba(31, 30, 29, 0.8);
+        color:white;
+        margin-left:0px!important;
+        margin-right:0px!important;
+    }
+    .bodytable{
+        padding-left:2%;
+        padding-right:2%;
+        background-color:rgba(134, 134, 133, 0.8);
+        height:100px;
+        display:block;
+        overflow-y:scroll;
+    }
+    .cardList{
+        margin-top:15px;
+    }
+}
